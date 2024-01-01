@@ -335,17 +335,17 @@ contactus.html
 
 ### Home Page:
 
-![output](./images/homepage.jpg)
+q
 
 ### Products page:
-![output](./Screenshot%202023-12-19%20105630.png)
+q
 
 ### People page:
-![output](./Screenshot%202023-12-19%20105751.png)
 
+q
 ### Contact_us page:
 
-![output](./Screenshot%202023-12-19%20105835.png)
+q
 
 ## Result:
 
