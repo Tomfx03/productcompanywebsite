@@ -36,12 +36,396 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 
-## OUTPUT:
+### CSS CODE :
 
-### Home Page:
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: #17421d;
+}
+.container {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  box-shadow: 15px 15px 8px gray;
+}
 
-![output](./images/homepage.jpg)
+.banner {
+  display: block;
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  font-size: 60px;
+  background-image: url("/static/img/log.png");
+  background-size: 100% 100%;
+  margin: 0px 0px 0px 0px;
+  padding-top: 150px;
+  color: #000000;
+}
 
-## Result:
+.menu {
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: larger;
+  background-color: #393939;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0px 0px 0px 0px;
+  border-width: 1px;
+}
 
-Thus a website is designed for the software product company and the HTML,CSS code are validated.
+.menuitem {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menuitemselected {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.menuitem a {
+  text-decoration: none;
+  color: #9c1018;
+}
+
+.content {
+  display: block;
+  width: 100%;
+  background-color: 
+  min-height: 500px;
+  margin: 0px 0px 0px 0px;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+}
+.homecontent {
+  min-height: 500px;
+  margin: 10px 10px 10px 10px;
+}
+.homecontent h1 {
+  text-align: left;
+}
+.homecontent img {
+  float: right;
+  width: 400px;
+  height: 300px;
+  margin-left: 10px;
+}
+
+.contenttext {
+  text-align: justify;
+}
+
+.productcontent {
+  min-height: 500px;
+  margin: 10px 10px 10px 10px;
+}
+
+.productcontent h1 {
+  text-align: left;
+}
+
+.productitems {
+  display: block;
+}
+
+.productitem {
+  display: inline-bl
+  width: 30%;
+  height: 250px;
+  text-align: center;
+}
+
+.productitem img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.productitem .itemimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.productitem .itemname {
+  display: block;
+}
+.productitem .itemprice {
+  display: block;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #393939;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0px 0px 0px 0px;
+  color: #9c1018;
+}
+```
+### HOME PAGE HTML CODE:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple Watch</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="icon" href="./img/app.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner"></div>				
+      <div class="menu">
+        <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
+        <div class="menuitem"><a href="/static/products.html">Products</a></div>
+        <div class="menuitem"><a href="/static/people.html">People</a></div>
+        <div class="menuitem"><a href="/static/contactus.html">Contact Us</a></div>
+      </div>
+      <div class="content">
+        <div class="homecontent">
+          <h1>About Us</h1>
+          <img src="./img/aw80.jpg"/>
+          <div class="contenttext">
+            At Tally, we believe in the power of technology to make business
+            owners efficient, empowered and happier, so they can focus on what
+            matters most for their business. We design our products to focus on
+            just that to make our products work for you, and not the other way
+            around.
+            <br />
+            Our new product TallyPrime takes this to a new level, making your
+            start to automation, or your switch to Tally simpler than ever
+            before. You can now discover the product much more easily and make
+            the product do more for you, without learning anything new. There is
+            greater flexibility as the product adapts to your business and your
+            way of working. And the transformed look and feel will only make you
+            love the product even more.
+            <ul>
+              <li>Simple to learn, easier to use</li>
+              <li>Insightful , actionable & customizable reports</li>
+              <li>Anywhere, anytime and secure access</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Copyright &#169; 2021 EduSoft Private Limited, Developed by Obed Otto.
+      </div>
+    </div>
+  </body>
+</html>
+```
+### PRODUCTS PAGE HTML CODE:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>APPLE Private Limited</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="icon" href="./img/app.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner"></div>
+      <div class="menu">
+        <div class="menuitem"><a href="/static/home.html">Home</a></div>
+        <div class="menuitemselected"><a href="/static/products.html">Products</a></div>
+        <div class="menuitem"><a href="/static/people.html">People</a></div>
+        <div class="menuitem"><a href="/static/contactus.html">Contact Us</a></div>
+      </div>
+      <div class="content">
+        <div class="productcontent">    
+          <h1>Our Premium Products</h1>
+          <div class="productitems">
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/awse.jpg" alt="product image">
+                  </div>
+                  <div class="itemname">Apple Watch SE</div>
+                  <div class="itemprice">Price: Rs.25,000.00 </div>
+                  <a href="payform.html" target="_blank" ><button>Buy now</button></a>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/aw8.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Apple Watch 8</div>
+                  <div class="itemprice">Price: Rs.40,000.00 </div>
+                  <a href="payform.html" target="_blank" ><button>Buy now</button></a>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/aw7.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Apple Watch 7</div>
+                  <div class="itemprice">Price: Rs.35,000.00 </div>
+                  <a href="payform.html" target="_blank" ><button>Buy now</button></a>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/aw5.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Apple Watch 5</div>
+                  <div class="itemprice">Price: Rs.20,000.00 </div>
+                  <a href="payform.html" target="_blank" ><button>Buy now</button></a>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/aw4.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Apple Watch 4</div>
+                  <div class="itemprice">Price: Rs.17,000.00 </div>
+                  <a href="payform.html" target="_blank" ><button>Buy now</button></a>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/aw3.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Apple Watch 3</div>
+                  <div class="itemprice">Price: Rs.15,000.00 </div>
+                  <a href="payform.html" target="_blank" ><button>Buy now</button></a>
+              </div>
+          </div>
+          </div>        
+      </div>
+      <div class="footer">
+        Copyright &#169; 2021 EduSoft Private Limited, Developed by Obed Otto.
+      </div>
+    </div>
+  </body>
+</html>
+```
+### PEOPLE PAGE HTML CODE:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple Watch</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="icon" href="./img/app.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner"></div>					
+      <div class="menu">
+        <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
+        <div class="menuitem"><a href="/static/products.html">Products</a></div>
+        <div class="menuitem"><a href="/static/people.html">People</a></div>
+        <div class="menuitem"><a href="/static/contactus.html">Contact Us</a></div>
+      </div>
+      <div class="content">
+        <div class="homecontent">
+          <h1>About Our CEO</h1>
+          <img src="./img/ceo.jpg"/>
+          <div class="contenttext">
+            <h2>Steve Jobs</h2>
+            Steve Jobs was a charismatic pioneer of the personal computer era. With Steve Wozniak, Jobs founded Apple Inc. in 1976 and transformed the company into a world leader in telecommunications. Widely considered a visionary and a genius, he oversaw the launch of such revolutionary products as the iPod and the iPhone.
+            <br />
+            <h2>Tim Cook</h2>
+            Timothy Donald Cook (born November 1, 1960) is an American business executive who has been the chief executive officer of Apple Inc. since 2011. Cook previously served as the company's chief operating officer under its co-founder Steve Jobs. 
+            <h2>Similarities Between Steve Jobs and Tim Cook </h2>
+            <ul>
+              <li><h4>Creating Buildup: </h4>Before revealing the new products, both Steve and Tim ensure that they remind people how great Apple products are, especially the iPhone. They walk the audience through a quick history of the iPhone and talk about the values of Apple.</li>
+              <li><h4>Superlative Words: </h4>When Steve Jobs described Apple products, it seemed as if it is the best product available in the world and no Company can even match them. While launching iPhone 6, Tim Cook used a similar approach to tell the public just how 'WOW' the Smartphone is and that it beats any other Smartphone out there. Below is a comparison of the words that were used by Steve Jobs and Tim Cook during the launch of iPhone 4 and iPhone 6 respectively.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Copyright &#169; 2021 EduSoft Private Limited, Developed by Obed Otto.
+      </div>
+    </div>
+  </body>
+</html>
+```
+### CONTACT PAGE HTML CODE:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple Watch</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="icon" href="./img/app.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner"></div>					
+      <div class="menu">
+        <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
+        <div class="menuitem"><a href="/static/products.html">Products</a></div>
+        <div class="menuitem"><a href="/static/people.html">People</a></div>
+        <div class="menuitem"><a href="/static/contactus.html">Contact Us</a></div>
+      </div>
+      <div class="content">
+        <div class="homecontent">
+          <h1>Contacting Apple</h1>
+          <img src="./img/as.jpg"/>
+          <div class="contenttext">
+
+<h2>Apple Online Service</h2>
+
+Apple.com is a convenient place to purchase Apple products and accessories from Apple. You can buy online or call 000800 040 1966.
+
+You can get information about an order you placed on the Apple Online Store through the Order Status page. If you prefer, you can also get order status or make changes by phone at 000800 040 1966.
+
+            <br />
+
+<h2>Registered Office</h2>
+
+<p>19th Floor, Concorde Tower C,</p>
+<p>UB City, No.24, Vittal Mallya Road,</p>
+<p></p>Bangalore 560001, India.</p>
+
+<p>CIN: U30007KA1996PTC019630</p>
+
+<p>91 80 4045 5150</p> 
+<p>Fax: 91 80 4045 5197</p>
+
+<p>bangalore</p>
+<p>admin@apple.com</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Copyright &#169; 2021 EduSoft Private Limited, Developed by Obed Otto.
+      </div>
+    </div>
+  </body>
+</html>
+```
+### HOME PAGE OUTPUT:
+![image](https://github.com/gowriganeshns/productcompanywebsite/assets/101335832/93d18a84-c753-453e-8ab5-8ccfc6cf70c5)
+
+### PRODUCT PAGE OUTPUT:
+![image](https://github.com/gowriganeshns/productcompanywebsite/assets/101335832/1b4c19bf-a0f7-4453-85a8-76405352aceb)
+
+
+
+### PEOPLE PAGE OUTPUT:
+
+![image](https://github.com/gowriganeshns/productcompanywebsite/assets/101335832/5508c321-93d3-4c45-901e-080056a64382)
+
+### CONTACT PAGE OUTPUt:
+![image](https://github.com/gowriganeshns/productcompanywebsite/assets/101335832/76d22f7d-d768-4e24-890d-334ee2eec4e6)
+
+### Result:
+The program for designing software company website using HTML and CSS is completed successfully.
+
+© 2023 GitHub, Inc. 
