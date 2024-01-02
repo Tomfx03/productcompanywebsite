@@ -1,112 +1,488 @@
-# Design of a Standard Calculator
-
+# Web Design for a Software Product Company
 ## AIM:
-
-To design a web application for a standard calculator.
-
+To design a static website for a software product company company.
 ## DESIGN STEPS:
-
 ### Step 1:
-Clone the github repository and create Django admin interface.
-
+Requirement collection.
 ### Step 2:
-Change settings.py file to allow request from all hosts.
-
+Creating the layout using HTML and CSS.
 ### Step 3:
-Use CSS for creating attractive colors.
-
+Updating the sample content.
 ### Step 4:
-Write JavaScript program for implementing five different operations.
-
+Choose the appropriate style and color scheme.
 ### Step 5:
-Validate the HTML and CSS code.
-
+Validate the layout in various browsers.
+### Step 6:
+Validate the HTML code.
 ### Step 6:
 Publish the website in the given URL.
 
 ## PROGRAM :
-```html
+### CSS LAYOUT CODE :
+
+    {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      background-color: whitesmoke;
+      color: #000000;
+    }
+    .container {
+      width: 1080px;
+      margin-left: auto;
+      margin-right: auto;
+      border-width: 1px 1px 1px 1px;
+      border-style: solid;
+      box-shadow: 15px 15px 8px rgb(0, 0, 0);
+    }
+
+    .banner {
+      display: block;
+      width: 100%;
+      height: 250px;
+      text-align: center;
+      font-size: 60px;
+      background-image: url("/static/img/banner.jpg");
+      background-size: 100% 100%;
+      margin: 0px 0px 0px 0px;
+      padding-top: 150px;
+      color: #0f0f0f;
+    }
+
+    .menu {
+      display: block;
+      width: 100%;
+      height: 50px;
+      font-size: larger;
+      background-color:#07eeff;
+      text-align: center;
+      padding-top: 15px;
+      margin: 0px 0px 0px 0px;
+      border-width: 1px;
+    }
+
+    .menuitem {
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .menuitemselected {
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+      color:rgb(236, 221, 88);
+    }
+
+    .menuitem a {
+      text-decoration: none;
+      color: #00225d;
+    }
+
+    .content {
+      display: block;
+      width: 100%;
+      background-color: #f2dd69;
+      min-height: 500px;
+      margin: 0px 0px 0px 0px;
+      border-width: 1px;
+      border-color: white;
+      border-style: solid;
+    }
+    .homecontent {
+      min-height: 500px;
+      margin: 10px 10px 10px 10px;
+      background-color:#f2dd69;
+    }
+    .homecontent h1 {
+      text-align: left;
+    }
+    .homecontent img {
+      float: right;
+      width: 400px;
+      height: 300px;
+      margin-left: 10px;
+    }
+
+    .contenttext {
+      text-align: justify;
+      font-size:x-large;
+    }
+
+    .contactcontent {
+      min-height: 500px;
+      margin: 10px 10px 10px 10px;
+    }
+    .contactcontent h1 {
+      text-align: center;
+    }
+    .contactcontent img {
+      float: left;
+      width: 400px;
+      height: 300px;
+      margin-left: 10px;
+    }
+
+    .contcontenttext {
+      text-align: justify;
+      font-size:x-large;
+    }
+
+    .productcontent {
+      min-height: 500px;
+      margin: 10px 10px 10px 10px;
+    }
+
+    .productcontent h1 {
+      text-align: left;
+    }
+
+    .productitems {
+      display:block;
+    }
+
+    .productitem {
+      display: inline-block;
+      width: 30%;
+      height: 250px;
+      text-align: center;
+    }
+
+    .productitem img {
+      width: 100px;
+      height: 100px;
+      display: block;
+    }
+    .productitem .itemimage {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+      margin-bottom: 5px;
+    }
+
+    .productitem .itemname {
+      display: block;
+    }
+    .productitem .itemprice {
+      display: block;
+    }
+
+    .footer {
+      display: block;
+      width: 100%;
+      height: 40px;
+      background-color: #07eeff;
+      text-align: center;
+      padding-top: 10px;
+      margin: 0px 0px 0px 0px;
+      color: #00225d;
+    }
+
+
+## home.html:
+
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <title>EduSoft Private Limited</title>
+            <link rel="stylesheet" href="./css/layout.css" />
+            <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+          </head>
+
+          <body>
+            <div class="container">
+              <div class="banner">EduSoft Private Limited.</div>
+              <div class="menu">
+                <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
+                <div class="menuitem"><a href="/static/products.html">Products</a></div>
+                <div class="menuitem"><a href = "/static/people.html">People</a></div>
+                <div class="menuitem"><a href = "/static/contactus.html">Contact Us</a></div>
+              </div>
+              <div class="content">
+                <div class="homecontent">
+                  <h1>About Us</h1>
+                  <img src="./img/building.png" alt="Building" />
+                  <div class="contenttext">
+                    At Edusoft, we take pride in being a leading provider of high-quality
+                    tally books that cater to a diverse range of industries and professionals.
+                    Our commitment to excellence, innovation, and customer satisfaction 
+                    sets us apart in the market, making us your go-to destination for all 
+                    your tally book needs.
+                    <br />
+                    Why Choose Edusoft?
+                    <ul>
+                      <li>Quality Assurance: Our tally books undergo rigorous quality checks to ensure accuracy and durability.</li>
+                      <li>Innovation: We embrace new technologies and offer customizable solutions to streamline your work.</li>
+                      <li>Customer-Centric: Your satisfaction is our priority.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer">
+                Copyright &#169; 2021 EduSoft Private Limited, Developed by Shri Sai Aravind.R.
+              </div>
+            </div>
+          </body>
+        </html>
+
+## product.html :
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>SEC Demo on Calculator</title>
-        <style type="text/css">
-        table{
-            border: 3px 
-            solid turquoise;
-            margin-left: auto;
-            margin-right: auto;
-            
-        }
-        input[type="text"]{
-            border: 2px solid black;
-            padding: 20px 40px;
-            font-size: 24px;
-            font-weight: bold;
-            border-radius: 2px;
-        }
+    <html lang="en">
+      <head>
+        <title>EduSoft Private Limited</title>
+        <link rel="stylesheet" href="./css/layout.css" />
+        <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+      </head>
 
+      <body>
+        <div class="container">
+          <div class="banner">EduSoft Private Limited.</div>
+          <div class="menu">
+            <div class="menuitem"><a href="/static/home.html">Home</a></div>
+            <div class="menuitemselected">
+              <a href="/static/products.html">Products</a>
+            </div>
+            <div class="menuitem"><a href = "/static/people.html">People</a></div>
+            <div class="menuitem"><a href = "/static/contactus.html">Contact Us</a></div>
+          </div>
+          <div class="content">
+            <div class="productcontent">    
+              <h1>Our Premium Products</h1>
+              <div class="productitems">
+                  <div class="productitem"> 
+                      <div class="itemimage">
+                      <img src="/static/img/tally_gold.png" alt="product image" >
+                      </div>
+                      <div class="itemname">Tally Gold</div>
+                      <div class="itemprice">Price: Rs.40,000.00 </div>
+                  </div>
+                  <div class="productitem"> 
+                      <div class="itemimage">
+                      <img src="/static/img/tally_silver.png"  alt="product image">
+                      </div>
+                      <div class="itemname">Tally Silver</div>
+                      <div class="itemprice">Price: Rs.10,000.00 </div>  
+                  </div>
+                  <div class="productitem"> 
+                    <div class="itemimage">
+                    <img src="/static/img/WhatsApp Image 2024-01-02 at 9.09.54 AM.png"  alt="product image">
+                    </div>
+                    <div class="itemname">Tally Prime</div>
+                    <div class="itemprice">Price: Rs.15,000.00 </div>  
+                  </div>
+                  <div class="productitem"> 
+                    <div class="itemimage">
+                    <img src="/static/img/WhatsApp Image 2024-01-02 at 9.11.06 AM.jpeg"  alt="product image">
+                    </div>
+                    <div class="itemname">Tally erp 9</div>
+                    <div class="itemprice">Price: Rs.15,000.00 </div>  
+                  </div>
+                  <div class="productitem"> 
+                    <div class="itemimage">
+                    <img src="/static/img/WhatsApp Image 2024-01-02 at 9.11.11 AM.jpeg"  alt="product image">
+                    </div>
+                    <div class="itemname">Tally Essential</div>
+                    <div class="itemprice">Price: Rs.15,000.00 </div>  
+                  </div>
+                  <div class="productitem"> 
+                    <div class="itemimage">
+                    <img src="/static/img/WhatsApp Image 2024-01-02 at 9.11.24 AM.jpeg"  alt="product image">
+                    </div>
+                    <div class="itemname">Payroll Using Tally Prime</div>
+                    <div class="itemprice">Price: Rs.15,000.00 </div>  
+                  </div>
+                  <div class="productitem"> 
+                    <div class="itemimage">
+                    <img src="/static/img/WhatsApp Image 2024-01-02 at 9.11.17 AM.jpeg"  alt="product image">
+                    </div>
+                    <div class="itemname">Accounting Using Tally Prime</div>
+                    <div class="itemprice">Price: Rs.15,000.00 </div>  
+                  </div>
+                  <div class="productitem"> 
+                    <div class="itemimage">
+                    <img src="/static/img/comdex.jpeg"  alt="product image">
+                    </div>
+                    <div class="itemname">Comdex - Tally erp 9</div>
+                    <div class="itemprice">Price: Rs.15,000.00 </div>  
+                  </div>
+                  <div class="productitem"> 
+                    <div class="itemimage">
+                    <img src="/static/img/comdex1.jpeg"  alt="product image">
+                    </div>
+                    <div class="itemname">Comdex - Computer and Financial accounting using Tally 9</div>
+                    <div class="itemprice">Price: Rs.15,000.00 </div>  
+                  </div>
+                  <div class="productitem"> 
+                    <div class="itemimage">
+                    <img src="/static/img/comdex2.jpeg"  alt="product image">
+                    </div>
+                    <div class="itemname">Comdex - Business accounting using MS Excel and Tally 9</div>
+                    <div class="itemprice">Price: Rs.15,000.00 </div>  
+                  </div>
+                  <div class="productitem"> 
+                    <div class="itemimage">
+                    <img src="/static/img/inventory.jpeg"  alt="product image">
+                    </div>
+                    <div class="itemname">Basic accounting And Inventory using Tally 9</div>
+                    <div class="itemprice">Price: Rs.15,000.00 </div>  
+                  </div>
+                  <div class="productitem"> 
+                    <div class="itemimage">
+                    <img src="/static/img/WhatsApp Image 2024-01-02 at 9.19.44 AM.jpeg"  alt="product image">
+                    </div>
+                    <div class="itemname">Tally Prime - With all new features</div>
+                    <div class="itemprice">Price: Rs.15,000.00 </div>  
+                  </div>
+              </div>
+              </div>        
+          <div class="footer">
+            Copyright &#169; 2021 EduSoft Private Limited, Developed by Shri Sai Aravind.R.
+          </div>
+        </div>
+        </div>
+      </body>
+  ## people.html:
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EduSoft Private Limited</title>
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+</head>
+<body>
+  <div class="container">
+    <div class="banner">EduSoft Private Limited.</div>
+    <div class="menu">
+      <div class="menuitem"><a href="/static/home.html">Home</a></div>
+      <div class="menuitem"><a href="/static/products.html">Products</a></div>
+      <div class="menuitemselected"><a href="/static/people.html">People</a></div>
+      <div class="menuitem"><a href="/static/contactus.html">Contact Us</a></div>
+    </div>
+  <div class="content">
+    <div class="productcontent">    
+      <h1>Our Staff !!</h1>
+      <div class="productitems">
+          <div class="productitem"> 
+            <div class="itemimage">
+            <img src="/static/img/person1.png"  alt="product image">
+            </div>
+            <div class="itemname">Tom Francies Xaviour- CEO</div> 
+          </div>
+          <div class="productitem"> 
+            <div class="itemimage">
+            <img src="/static/img/person2.png"  alt="product image">
+            </div>
+            <div class="itemname">person-2 - Head developer</div>
+          </div>
+          <div class="productitem"> 
+            <div class="itemimage">
+            <img src="/static/img/person3.png"  alt="product image">
+            </div>
+            <div class="itemname">person-3 - HR</div>
+          </div>
+          <div class="productitem"> 
+            <div class="itemimage">
+            <img src="/static/img/person4.png"  alt="product image">
+            </div>
+            <div class="itemname">person-4 - Project manager</div>  
+          </div>
+          <div class="productitem"> 
+            <div class="itemimage">
+            <img src="/static/img/person5.png"  alt="product image">
+            </div>
+            <div class="itemname">person-5 - Receptionist</div>  
+          </div>
+          <div class="productitem"> 
+            <div class="itemimage">
+            <img src="/static/img/person6.png"  alt="product image">
+            </div>
+            <div class="itemname">person-6 - Salesman</div>
+          </div>
+      </div>
+    </div>        
+  </div>
+  <div class="footer">
+      Copyright &#169; 2021 EduSoft Private Limited, Developed by Shri Sai Aravind.R .
+  </div>
+  </div>
+  </body>
+  </html>
 
-        input[type="button"]{
-            border:2px solid black;
-            width: 100%;
-            padding: 20px 40px;
-            background-color:rgb(255, 65, 245);
-            border-radius: 2px;
-        }
-        </style>
-    </head>
-    <body style="background-color:#000c18">
-        <form name="form1" onload="result.value=''">
-            <h1 style="text-align: center;color:rgb(255, 65, 245);">Simple Calculator</h1>
-        <table id="calc">
-            <tr>
-                <td colspan="4">
-                    <input type="text" id="result">
-                </td>
-            </tr>
-            <tr>
-                <td><input type="button" value="1" onclick="result.value+='1'"/></td>
-                <td><input type="button" value="2" onclick="result.value+='2'"/></td>
-                <td><input type="button" value="3" onclick="result.value+='3'"/></td>
-                <td><input type="button" value="+" onclick="result.value+='+'"/></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="4" onclick="result.value+='4'"/></td>
-                <td><input type="button" value="5" onclick="result.value+='5'"/></td>
-                <td><input type="button" value="6" onclick="result.value+='6'"/></td>
-                <td><input type="button" value="-" onclick="result.value+='-'"/></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="7" onclick="result.value+='7'"/></td>
-                <td><input type="button" value="8" onclick="result.value+='8'"/></td>
-                <td><input type="button" value="9" onclick="result.value+='9'"/></td>
-                <td><input type="button" value="*" onclick="result.value+=''"/></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="/" onclick="result.value+='/'"/></td>
-                <td><input type="button" value="0" onclick="result.value+='0'"/></td>
-                <td><input type="button" value="." onclick="result.value+='.'"/></td>
-                <td><input type="button" value="=" onclick="result.value=eval(result.value)"/></td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <input type="button" value="clear all" id="clear" onclick="result.value=''">
-                </td>
-            </tr>
-        </table>
-        </form>
-    </body>
+## contactus :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EduSoft Private Limited</title>
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+</head>
+<body>
+  <div class="container">
+    <div class="banner">EduSoft Private Limited.</div>
+    <div class="menu">
+      <div class="menuitem"><a href="/static/home.html">Home</a></div>
+      <div class="menuitem"><a href="/static/products.html">Products</a></div>
+      <div class="menuitem"><a href = "/static/people.html">People</a></div>
+      <div class="menuitemselected"><a href = "/static/contactus.html">Contact Us</a></div>
+    </div>
+  <div class="content">
+      <div class="contactcontent">
+        <h1>Contact Us</h1>
+        <img src="./img/building.png" alt="Building" />
+        <div class="contcontenttext">
+                    We value your interest in Edusoft. If you want any kind of assistance regarding our services, reach out to us !!
+          <br>
+          <br>
+          <b><u>Contact Information:</u></b>
+          <br>
+          <b><u>Email --></u></b> edusoft.help@gmail.com<br><br>
+
+          Feel free to reach out to us via email at the address provided above.<br><br>
+
+          <b><u>Office Address:</u></b><br>
+
+          <b><i>**Edusoft Private Limited**</i></b><br>
+
+                                                                      <pre>                                                             42 Wallaby Way, Sydney, Australia<br></pre>
+
+                                                                      <b><u>Customer Support</u></b><br><br>
+
+                                                                      For technical support or assistance with our products and services, please contact our support team at <u>edusoft.help@gmail.com</u>.<br><br>
+
+                                                                      <b><u>Feedback and Suggestions:</u></b><br><br>
+
+                                                                      We appreciate your feedback and suggestions. Feel free to share your thoughts by emailing us at edusoft.help@gmail.com.<br><br>
+
+                                                                      <b> Thank you for choosing Edusoft Private Limited. We look forward to hearing from you and assisting you on your educational journey!</b>
+        </div>
+      </div>
+    </div>
+  <div class="footer">
+      Copyright &#169; 2021 EduSoft Private Limited, Developed by Shri Sai Aravind.R .
+  </div>
+  </div>
+</body>
 </html>
-```
-
-## Server Output:
-![standard calculator  server output](https://github.com/SaravananPV3010/standard-calculator/assets/139754526/b9baabb0-53d8-4e65-a657-df560ec17418)
 
 
-## Client Output:
-![standard calculator  client output](https://github.com/SaravananPV3010/standard-calculator/assets/139754526/a415c2f3-c4de-4386-93e1-a130ff3e9dc6)
+
+
+## OUTPUT:
+
+### Home Page:
+
+![output](./images/homepage.jpg)
+### PRODUCT PAGE:
+![Screenshot from 2024-01-02 09-29-35](https://github.com/gowriganeshns/productcompanywebsite/assets/101335832/f6edf39b-3f5a-4b73-aa5c-08dbedfcde29)
+
+### PEOPLE PAGE:
+![Screenshot from 2024-01-02 09-30-00](https://github.com/gowriganeshns/productcompanywebsite/assets/101335832/42ab535d-7ed9-4042-8486-4a8d8c4c676a)
+### CONTACT PAGE:
+![Screenshot from 2024-01-02 09-30-14](https://github.com/gowriganeshns/productcompanywebsite/assets/101335832/7dd2083f-66a8-4352-b025-67a7ba4061c2)
 
 
 ## Result:
-A web application for a standard calculator has been designed successfully.
+
+Thus a website is designed for the software product company and the HTML,CSS code are validated.
+Footer
