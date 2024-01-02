@@ -471,8 +471,8 @@ Publish the website in the given URL.
 ## OUTPUT:
 
 ### Home Page:
+![Screenshot from 2024-01-02 09-28-55](https://github.com/Tomfx03/productcompanywebsite/assets/101335832/d097b00a-f624-4581-8b55-282b0a5a0bab)
 
-![output](./images/homepage.jpg)
 ### PRODUCT PAGE:
 ![Screenshot from 2024-01-02 09-29-35](https://github.com/gowriganeshns/productcompanywebsite/assets/101335832/f6edf39b-3f5a-4b73-aa5c-08dbedfcde29)
 
